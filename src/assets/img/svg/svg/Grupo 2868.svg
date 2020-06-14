@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1383.113" height="883.475" viewBox="0 0 1383.113 883.475">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.783" gradientTransform="translate(0.179 0.163) scale(0.639 0.639)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a6479"/>
+      <stop offset="0.312" stop-color="#404756"/>
+      <stop offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_2868" data-name="Grupo 2868" opacity="0.33">
+    <g id="Grupo_2867" data-name="Grupo 2867" transform="translate(0 0)">
+      <ellipse id="Elipse_37" data-name="Elipse 37" cx="691.557" cy="441.738" rx="691.557" ry="441.738" fill="url(#radial-gradient)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

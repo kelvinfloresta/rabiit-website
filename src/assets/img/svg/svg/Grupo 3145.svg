@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1915.919" height="1000.419" viewBox="0 0 1915.919 1000.419">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_46" data-name="Retângulo 46" width="1915.919" height="1000.419" fill="none"/>
+    </clipPath>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.677" gradientTransform="translate(0.165 0.157) scale(0.739 0.739)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5a6479"/>
+      <stop offset="0.312" stop-color="#404756"/>
+      <stop offset="1"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_3145" data-name="Grupo 3145" opacity="0.56">
+    <g id="Grupo_3144" data-name="Grupo 3144" clip-path="url(#clip-path)">
+      <g id="Grupo_3143" data-name="Grupo 3143" transform="translate(848.401 201.516)">
+        <g id="Grupo_3142" data-name="Grupo 3142">
+          <ellipse id="Elipse_39" data-name="Elipse 39" cx="599" cy="442.65" rx="599" ry="442.65" fill="url(#radial-gradient)" style="mix-blend-mode: color-dodge;isolation: isolate"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
