@@ -37,3 +37,85 @@ html {
     url(/assets/fonts/seguibl.ttf) format("truetype");
   font-weight: 800;
 }
+
+.arrow-scroll {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  img {
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: 5rem;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: -5rem;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+.slide {
+  &-down.active {
+    animation: slide-down 0.5s;
+  }
+  &-up.active {
+    animation: slide-up 0.5s;
+  }
+}
+
+.header1 {
+  color: #1e2040;
+  letter-spacing: -1px;
+  line-height: 6rem;
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.header2 {
+  margin: 0;
+  color: #1e2040;
+  letter-spacing: 0px;
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.header3 {
+  color: #1e2040;
+  letter-spacing: 0px;
+  line-height: 3rem;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.paragraph {
+  color: #101126;
+  letter-spacing: 0px;
+  line-height: 2rem;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.avatar {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #101126;
+}
