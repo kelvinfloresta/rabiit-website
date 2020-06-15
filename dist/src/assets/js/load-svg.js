@@ -1,4 +1,4 @@
-window.addEventListener('load', async () => {
+window.addEventListener('load', () => {
   async function loadSVG (svgName) {
     const svgContainer = document.querySelector('.' + svgName)
     if (!svgContainer) {
@@ -13,4 +13,5 @@ window.addEventListener('load', async () => {
   loadSVG('smartphone')
   loadSVG('smartphone-2')
   loadSVG('floating-windows')
+  loadSVG('processor')
 })
