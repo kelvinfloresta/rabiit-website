@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
     svgContainer.classList.add('active')
   }
 
-  loadSVG('notebook')
+  loadSVG('notebook');
   loadSVG('smartphone')
   loadSVG('smartphone-2')
   loadSVG('floating-windows')
