@@ -48,6 +48,13 @@ function watchFiles (cb) {
   cb()
 }
 
+exports.build = series(
+  cleanDistDir,
+  minifyHtml,
+  transpileSass,
+  copyFiles
+)
+
 exports.default = series(
   cleanDistDir,
   minifyHtml,
