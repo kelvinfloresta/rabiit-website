@@ -7,7 +7,7 @@
     "start": "gulp default",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp build",
-    "server": "serve -s dist/src -p 3000"
+    "server": "http-server dist/src"
   },
   "repository": {
     "type": "git",
@@ -21,7 +21,8 @@
   "homepage": "https://github.com/kelvinfloresta/rabiit-website#readme",
   "dependencies": {
     "browser-sync": "^2.26.7",
-    "gulp": "^4.0.2"
+    "gulp": "^4.0.2",
+    "http-server": "^0.12.3"
   },
   "devDependencies": {
     "eslint": "^7.2.0",
@@ -36,7 +37,6 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
-    "node-sass": "^4.14.1",
-    "serve": "^11.3.2"
+    "node-sass": "^4.14.1"
   }
 }
