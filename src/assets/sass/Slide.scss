@@ -1,0 +1,29 @@
+.slide-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rem;
+  align-items: center;
+  width: 150px;
+  margin: 0 auto;
+  user-select: none;
+
+  > * {
+    cursor: pointer;
+    opacity: 0.25;
+    transition: opacity 0.1s, transform 0.1s;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      transform: translateX(10px);
+    }
+  }
+
+  .left {
+    transform: rotate(180deg);
+    margin-top: -1px;
+    &:active {
+      transform: rotate(180deg) translateX(10px);
+    }
+  }
+}

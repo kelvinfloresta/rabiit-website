@@ -1,0 +1,37 @@
+.card {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  height: 350px;
+  width: 350px;
+  padding: 1.5rem;
+  padding-bottom: 3rem;
+  transition: 0.3s;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &-title {
+    color: #1e2040;
+    font-size: 1.5rem;
+    margin: 2.25rem 0;
+    text-transform: uppercase;
+    line-height: 3rem;
+  }
+
+  .avatar-photo {
+    margin: 0 auto;
+  }
+
+  &:hover {
+    background-color: #1e2040;
+    color: white;
+    .card-title,
+    .paragraph {
+      color: white;
+    }
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}

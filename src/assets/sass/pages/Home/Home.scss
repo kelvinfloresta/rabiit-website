@@ -1,0 +1,13 @@
+@import "../../Avatar.scss";
+@import "../../Card.scss";
+
+@import "Home-intro.scss";
+@import "Home-about-us.scss";
+@import "Home-products.scss";
+
+.Home {
+  padding: 0 10%;
+  overflow: hidden;
+  background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
+    0% no-repeat padding-box;
+}

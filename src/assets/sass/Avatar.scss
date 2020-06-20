@@ -1,0 +1,33 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+
+  &-info {
+    max-width: 450px;
+    margin-left: 2.75rem;
+    .avatar-name {
+      margin: 0;
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 4rem;
+      color: #1e2040;
+      text-transform: uppercase;
+    }
+
+    .avatar-description {
+      margin: 0;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 2rem;
+      color: #101126;
+    }
+  }
+}
+
+.avatar-photo {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  background-color: #707070;
+}

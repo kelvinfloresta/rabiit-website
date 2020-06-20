@@ -1,0 +1,35 @@
+.Home-about-us {
+  display: flex;
+  margin: 0 -12.5%;
+  background-color: white;
+  min-height: 500px;
+  padding: 0 10%;
+  padding-bottom: 5.188rem;
+
+  .processor {
+    max-width: 350px;
+  }
+
+  &-items {
+    margin-top: 100px;
+  }
+
+  &-text {
+    margin-top: 156px;
+    margin-right: 9rem;
+    .header2 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .header1 {
+      margin: 0 0 3rem 0;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .paragraph {
+      margin-left: 3.25rem;
+      max-width: 450px;
+      margin-bottom: 100px;
+    }
+  }
+}

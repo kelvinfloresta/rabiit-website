@@ -8,8 +8,7 @@ const clean = require('gulp-clean')
 const copy = require('gulp-copy')
 
 function cleanDistDir () {
-  return src('dist', { read: false, allowEmpty: true })
-    .pipe(clean())
+  return src('dist', { read: false, allowEmpty: true }).pipe(clean())
 }
 
 function minifyHtml () {
@@ -27,7 +26,7 @@ function browserSyncTask () {
 }
 
 function transpileSass () {
-  return src('src/assets/sass/*.scss')
+  return src(['src/assets/sass/**/*.scss', '!_*.scss'])
     .pipe(sass())
     .pipe(cleanCSS({ compatibility: 'ie8' }))
     .pipe(rename({ suffix: '.min' }))
@@ -36,15 +35,24 @@ function transpileSass () {
 }
 
 function copyFiles () {
-  return src(['src/assets/**', '!src/assets/sass/**'])
-    .pipe(copy('dist'))
+  return src(['src/assets/**', '!src/assets/sass/**']).pipe(copy('dist'))
 }
 
 function watchFiles (cb) {
   watch('src/*.html', minifyHtml).on('change', browserSync.reload)
-  watch('src/assets/sass/*.scss', transpileSass)
-  watch('src/assets/**', copyFiles).on('change', browserSync.reload)
+  watch('src/assets/sass/**', transpileSass)
+  watch(['src/assets/**', '!src/assets/sass/**'], copyFiles).on(
+    'change',
+    browserSync.reload
+  )
   cb()
 }
 
-exports.default = series(cleanDistDir, minifyHtml, transpileSass, copyFiles, watchFiles, browserSyncTask)
+exports.default = series(
+  cleanDistDir,
+  minifyHtml,
+  transpileSass,
+  copyFiles,
+  watchFiles,
+  browserSyncTask
+)

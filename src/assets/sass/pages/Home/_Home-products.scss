@@ -1,0 +1,70 @@
+@import "../../Slide.scss";
+
+.Home-products {
+  background: transparent linear-gradient(56deg, #21325d 0%, #214c93 100%) 0% 0%
+    no-repeat padding-box;
+  margin: 0 -12.5%;
+  padding-top: 2.813rem;
+
+  position: relative;
+
+  .header1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 5.375rem;
+    margin: 0;
+    margin-bottom: 6.25rem;
+  }
+
+  .card {
+    &-title {
+      margin-bottom: 3rem;
+    }
+
+    .paragraph {
+      line-height: 1.5rem;
+      letter-spacing: 0.025rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .cards-row {
+    z-index: 1;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  .top-right-points {
+    position: absolute;
+    height: 124px;
+    width: 371px;
+    top: 4px;
+    right: 167px;
+  }
+
+  .top-right-diamond-points {
+    position: absolute;
+    height: 194px;
+    width: 194px;
+    top: 56px;
+    right: -32px;
+  }
+
+  .left-center-points {
+    position: absolute;
+    height: 335px;
+    width: 390px;
+    top: 192px;
+    left: -145px;
+  }
+}
