@@ -41,6 +41,7 @@ function copyFiles () {
 function watchFiles (cb) {
   watch('src/*.html', minifyHtml).on('change', browserSync.reload)
   watch('src/assets/sass/**', transpileSass)
+  watch('src/assets/sass/**/_*.scss', browserSync.reload)
   watch(['src/assets/**', '!src/assets/sass/**'], copyFiles).on(
     'change',
     browserSync.reload
@@ -48,12 +49,7 @@ function watchFiles (cb) {
   cb()
 }
 
-exports.build = series(
-  cleanDistDir,
-  minifyHtml,
-  transpileSass,
-  copyFiles
-)
+exports.build = series(cleanDistDir, minifyHtml, transpileSass, copyFiles)
 
 exports.default = series(
   cleanDistDir,
