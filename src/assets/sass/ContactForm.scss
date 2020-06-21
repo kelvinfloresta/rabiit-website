@@ -1,0 +1,76 @@
+.contact {
+  display: flex;
+  padding-top: 6.25rem;
+  justify-content: flex-end;
+
+  .contact-text {
+    position: relative;
+    padding-top: 5.313rem;
+    padding-bottom: 13.44rem;
+
+    .bold {
+      display: block;
+      font-size: 2.5rem;
+      line-height: 3rem;
+      letter-spacing: 0px;
+    }
+    .header2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      color: white;
+      text-align: left;
+      letter-spacing: 0px;
+      margin-right: 18.75rem;
+      z-index: 1;
+      position: relative;
+      margin-bottom: 192px;
+    }
+
+    .social-media {
+      margin-bottom: 4.813rem;
+      .paragraph {
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.75rem;
+        margin-bottom: 3.125rem;
+      }
+      img {
+        margin-right: 2rem;
+      }
+    }
+
+    .contact-info {
+      margin-left: 50px;
+      color: white;
+
+      .contact-phone {
+        margin: 0;
+        font-size: 1.313rem;
+        line-height: 2.625rem;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 2rem;
+      }
+
+      .paragraph {
+        font-size: 1.313rem;
+        margin: 0;
+        color: white;
+        line-height: 2rem;
+        font-weight: 400;
+      }
+    }
+
+    .center-points {
+      position: absolute;
+      width: 327px;
+      top: 122px;
+      right: 0;
+    }
+  }
+
+  .contact-form {
+    width: 900px;
+    background-color: white;
+  }
+}
