@@ -1,7 +1,14 @@
-.contact {
+.contact-section {
   display: flex;
   padding-top: 6.25rem;
   justify-content: flex-end;
+
+  .left-bottom-points {
+    position: absolute;
+    bottom: -130px;
+    left: -75px;
+    transform: rotate(90deg);
+  }
 
   .contact-text {
     position: relative;
@@ -68,19 +75,19 @@
       right: 0;
     }
   }
+}
 
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 900px;
-    background-color: white;
-    padding-left: 8.75rem;
-    padding-top: 10.94rem;
-    padding-right: 17.5rem;
-    .btn {
-      width: fit-content;
-      align-self: flex-end;
-    }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 900px;
+  background-color: white;
+  padding-left: 8.75rem;
+  padding-top: 10.94rem;
+  padding-right: 17.5rem;
+  .btn {
+    width: fit-content;
+    align-self: flex-end;
   }
 }
