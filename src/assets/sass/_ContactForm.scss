@@ -70,11 +70,17 @@
   }
 
   .contact-form {
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 900px;
     background-color: white;
     padding-left: 8.75rem;
     padding-top: 10.94rem;
     padding-right: 17.5rem;
+    .btn {
+      width: fit-content;
+      align-self: flex-end;
+    }
   }
 }
