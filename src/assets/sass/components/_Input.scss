@@ -1,0 +1,35 @@
+.input-group {
+  margin-bottom: 2.125rem;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    padding-left: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.188rem;
+    width: fit-content;
+    cursor: pointer;
+  }
+
+  input {
+    line-height: 3.5rem;
+    padding-left: 1.5rem;
+    border: 1px solid #1e2040;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+    box-sizing: border-box;
+    opacity: 0.8;
+    &:focus {
+      outline: none;
+      opacity: 1;
+    }
+    ::placeholder {
+      color: #737380;
+      font-size: 0.9375rem;
+      line-height: 1.125rem;
+    }
+  }
+}
