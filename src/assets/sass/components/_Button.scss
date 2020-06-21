@@ -1,0 +1,20 @@
+.btn {
+  color: white;
+  cursor: pointer;
+  border: 1px solid #707070;
+  border-radius: 8px;
+  line-height: 1.188rem;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  transition: background-color 0.3s, transform 0.3s;
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &-primary {
+    background-color: #1e2040;
+    &:hover {
+      background-color: #143e70;
+    }
+  }
+}
