@@ -1,9 +1,10 @@
-@import "../../Avatar.scss";
-@import "../../Card.scss";
+@import "../../Avatar";
+@import "../../Card";
+@import "../../ContactForm";
 
-@import "Home-intro.scss";
-@import "Home-about-us.scss";
-@import "Home-products.scss";
+@import "Home-intro";
+@import "Home-about-us";
+@import "Home-products";
 
 .Home {
   padding: 0 10%;
