@@ -2,39 +2,22 @@
 
 @import "components/Input";
 @import "components/Button";
+@import "components/Header";
+@import "components/Footer";
 
 html {
   font-family: "Work Sans";
   font-size: 16px;
 }
 
-.header {
-  display: flex;
-  padding-top: 1.5rem;
-  margin: 0 auto;
-  justify-content: space-between;
-  align-items: center;
-
-  .logo {
-    font-size: 3.5rem;
-    font-family: SegoeUI;
-    line-height: 4.688rem;
-    letter-spacing: 0;
-    margin: 0;
-    text-transform: uppercase;
-    color: white;
-  }
-  .links {
-    font-weight: 500;
-    font-size: 1.5rem;
-    margin-right: 5%;
-    a {
-      line-height: 2rem;
-      margin-left: 4rem;
-      text-decoration: none;
-      color: white;
-    }
-  }
+.logo {
+  font-size: 3.5rem;
+  font-family: SegoeUI;
+  line-height: 4.688rem;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
 }
 
 @font-face {
