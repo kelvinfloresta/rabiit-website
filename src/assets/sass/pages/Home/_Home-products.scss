@@ -24,7 +24,7 @@
 
     .paragraph {
       line-height: 1.5rem;
-      letter-spacing: 0.025rem;
+      letter-spacing: 0.38px;
       overflow: hidden;
       text-overflow: ellipsis;
     }
@@ -37,11 +37,6 @@
     margin: 0 auto;
     justify-content: space-between;
     margin-bottom: 4rem;
-
-    @media (max-width: 768px) {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
   }
 
   .top-right-points {
@@ -66,5 +61,31 @@
     width: 390px;
     top: 192px;
     left: -145px;
+  }
+
+  @media (max-width: 768px) {
+    background: #1e2040;
+
+    .header1 {
+      text-align: center;
+      font-size: 1.875rem;
+      line-height: 2.813rem;
+      font-weight: 500;
+      margin-bottom: 1.438rem;
+    }
+    .cards-row {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .card {
+      margin-bottom: 1.5rem;
+    }
+
+    .top-right-points,
+    .top-right-diamond-points,
+    .left-center-points {
+      display: none;
+    }
   }
 }
