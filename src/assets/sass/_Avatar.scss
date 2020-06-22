@@ -23,6 +23,37 @@
       color: #101126;
     }
   }
+
+  @media (max-width: $mobile) {
+    margin-bottom: 2.313rem;
+    position: relative;
+
+    .avatar-photo {
+      background-color: #1e2040;
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      top: -9px;
+    }
+
+    &-info {
+      margin: 0;
+      .avatar-name {
+        color: #1e2040;
+        font-size: 1.438rem;
+        display: block;
+        margin-left: 60px;
+        line-height: 1.938rem;
+        margin-bottom: 1.625rem;
+      }
+
+      .avatar-description {
+        letter-spacing: 0.5px;
+        color: #747474;
+        font-size: 1.313rem;
+      }
+    }
+  }
 }
 
 .avatar-photo {

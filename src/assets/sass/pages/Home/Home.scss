@@ -1,24 +1,25 @@
+@import "../../variables";
 @import "../../Avatar";
 @import "../../Card";
 @import "../../ContactSection";
-@import "../../variables";
+
+$home-padding: 10%;
+$home-mobile-padding: 1.625rem;
 
 @import "Home-intro";
 @import "Home-about-us";
 @import "Home-products";
 
 .Home {
-  padding: 0 10%;
   overflow: hidden;
 
   &-bg-color {
-    margin: 0 -12.5%;
-    padding: 0 10%;
+    padding: 0 $home-padding;
     background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
       0% no-repeat padding-box;
 
     @media (max-width: $mobile) {
-      padding: 0 26px;
+      padding: 0 $home-mobile-padding;
       background: transparent linear-gradient(218deg, #254c86 0%, #1e2040 100%)
         0% 0% no-repeat padding-box;
     }

@@ -1,22 +1,13 @@
 .Home-about-us {
+  padding: 0 $home-padding;
   display: flex;
-  margin: 0 -12.5%;
+  flex-direction: column;
   background-color: white;
-  min-height: 500px;
-  padding: 0 10%;
   padding-bottom: 5.188rem;
 
-  .processor {
-    max-width: 350px;
-  }
-
-  &-items {
-    margin-top: 100px;
-  }
-
   &-text {
-    margin-top: 156px;
-    margin-right: 9rem;
+    position: relative;
+    margin-top: 9.75rem;
     .header2 {
       margin: 0;
       text-transform: uppercase;
@@ -29,7 +20,64 @@
     .paragraph {
       margin-left: 3.25rem;
       max-width: 450px;
-      margin-bottom: 100px;
+    }
+    .processor {
+      position: absolute;
+      width: 1100px;
+      height: 800px;
+      top: -110px;
+      right: -190px;
+    }
+  }
+
+  &-items {
+    margin-top: 6.25rem;
+  }
+
+  @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 $home-mobile-padding;
+
+    &-text {
+      margin: 0;
+      margin-top: 4.125rem;
+      .header2 {
+        text-align: center;
+        font-size: 1.125rem;
+        line-height: 1.688rem;
+        font-weight: 400;
+        color: #757474;
+      }
+      .header1 {
+        color: #757474;
+        font-size: 2.125rem;
+        text-align: center;
+        line-height: 3.188rem;
+        margin-bottom: 1.063rem;
+        font-weight: 400;
+        letter-spacing: -1px;
+      }
+      .paragraph {
+        color: #757474;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0.58px;
+        margin: 0;
+        font-weight: 400;
+      }
+      .processor {
+        position: static;
+        margin-left: 4rem;
+        width: 360px;
+        height: 300px;
+      }
+    }
+
+    &-items {
+      margin-top: 7.5rem;
+      margin-bottom: 1.313rem;
     }
   }
 }
