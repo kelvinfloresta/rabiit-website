@@ -1,0 +1,17 @@
+.light-button {
+  display: inline-block;
+  border: 1px solid white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  &:hover {
+    background-color: white;
+    color: #1e2040;
+  }
+  &:active {
+    transform: scale(0.97);
+  }
+}
