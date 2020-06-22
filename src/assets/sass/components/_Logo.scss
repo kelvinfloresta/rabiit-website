@@ -1,0 +1,14 @@
+.logo {
+  font-size: 3.5rem;
+  font-family: SegoeUI;
+  line-height: 4.688rem;
+  letter-spacing: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: white;
+
+  @media (max-width: $mobile) {
+    font-size: 2.063rem;
+    line-height: 2.813rem;
+  }
+}
