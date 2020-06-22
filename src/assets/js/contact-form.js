@@ -1,4 +1,4 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
   window.emailjs.init(null)
   var serviceId = 'gmail'
   var templateName = 'contact-form'
@@ -10,4 +10,4 @@ window.addEventListener('load', function() {
       window.emailjs.sendForm(serviceId, templateName, this)
     })
   })
-}
+})
