@@ -1,0 +1,27 @@
+.menu {
+  z-index: 1;
+  position: fixed;
+  right: 1rem;
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    height: 6px;
+    width: 45px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+
+  &.active {
+    .bar1 {
+      transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    .bar2 {
+      opacity: 0;
+    }
+    .bar3 {
+      transform: rotate(45deg) translate(-9px, -9px);
+    }
+  }
+}
