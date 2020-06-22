@@ -1,3 +1,5 @@
+@import "./Menu";
+
 .header {
   display: flex;
   padding-top: 1.5rem;
@@ -13,7 +15,41 @@
       line-height: 2rem;
       margin-left: 4rem;
       text-decoration: none;
+      text-transform: uppercase;
       color: white;
     }
+  }
+
+  @media (max-width: $mobile) {
+    padding-top: 1.25rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header .links {
+    padding-top: 30%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    height: 100%;
+    flex-direction: column;
+    background-color: #00de96;
+    align-items: center;
+    justify-content: unset;
+  }
+
+  header .links a {
+    margin-right: 0 !important;
+  }
+
+  header .links a.active {
+    color: #fff;
+  }
+
+  header .links.active {
+    width: 100%;
   }
 }
