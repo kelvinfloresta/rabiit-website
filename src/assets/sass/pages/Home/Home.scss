@@ -1,6 +1,7 @@
 @import "../../Avatar";
 @import "../../Card";
 @import "../../ContactSection";
+@import "../../variables";
 
 @import "Home-intro";
 @import "Home-about-us";
@@ -9,6 +10,17 @@
 .Home {
   padding: 0 10%;
   overflow: hidden;
-  background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
-    0% no-repeat padding-box;
+
+  &-bg-color {
+    margin: 0 -12.5%;
+    padding: 0 10%;
+    background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
+      0% no-repeat padding-box;
+
+    @media (max-width: $mobile) {
+      padding: 0 26px;
+      background: transparent linear-gradient(218deg, #254c86 0%, #1e2040 100%)
+        0% 0% no-repeat padding-box;
+    }
+  }
 }

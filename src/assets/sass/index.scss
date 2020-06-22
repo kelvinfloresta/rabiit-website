@@ -1,23 +1,17 @@
 @import "Typography";
+@import "Animations.scss";
+@import "variables";
 
 @import "components/Input";
 @import "components/Button";
+@import "components/LightButton";
 @import "components/Header";
 @import "components/Footer";
+@import "components/Logo";
 
 html {
   font-family: "Work Sans";
   font-size: 16px;
-}
-
-.logo {
-  font-size: 3.5rem;
-  font-family: SegoeUI;
-  line-height: 4.688rem;
-  letter-spacing: 0;
-  margin: 0;
-  text-transform: uppercase;
-  color: white;
 }
 
 @font-face {
@@ -36,34 +30,5 @@ html {
   img {
     position: absolute;
     bottom: -2px;
-  }
-}
-
-@keyframes slide-down {
-  from {
-    margin-top: 5rem;
-  }
-
-  to {
-    margin-top: 0;
-  }
-}
-
-@keyframes slide-up {
-  from {
-    margin-top: -5rem;
-  }
-
-  to {
-    margin-top: 0;
-  }
-}
-
-.slide {
-  &-down.active {
-    animation: slide-down 0.5s;
-  }
-  &-up.active {
-    animation: slide-up 0.5s;
   }
 }
