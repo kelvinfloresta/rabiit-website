@@ -140,17 +140,17 @@
         <form class="contact-form">
           <div class="input-group">
             <label for="name">Nome</label>
-            <input id="name" placeholder="Seu nome" />
+            <input id="name" name="name" placeholder="Seu nome" />
           </div>
 
           <div class="input-group">
             <label for="email">E-mail</label>
-            <input id="email" placeholder="email@exemplo.com" />
+            <input id="email" name="email" placeholder="email@exemplo.com" />
           </div>
 
           <div class="input-group">
             <label for="phone">Telefone</label>
-            <input id="phone" placeholder="(11) 9800-0000" />
+            <input id="phone" name="phone" placeholder="(11) 9800-0000" />
           </div>
 
           <button class="btn btn-primary">Enviar mensagem</button>
@@ -166,6 +166,9 @@
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script async src="/assets/js/index.js"></script>
   <script async src="/assets/js/load-svg.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+  <script src="/assets/js/contact-form.js"></script>
 </body>
 
 </html>
