@@ -1,0 +1,28 @@
+@keyframes slide-down {
+  from {
+    margin-top: 5rem;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: -5rem;
+  }
+
+  to {
+    margin-top: 0;
+  }
+}
+
+.slide {
+  &-down.active {
+    animation: slide-down 0.5s;
+  }
+  &-up.active {
+    animation: slide-up 0.5s;
+  }
+}
