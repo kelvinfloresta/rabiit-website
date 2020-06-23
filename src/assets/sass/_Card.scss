@@ -34,4 +34,14 @@
   &:active {
     transform: scale(0.98);
   }
+
+  @media (max-width: 768px) {
+    &-title {
+      font-size: 1.313rem;
+    }
+
+    .paragraph {
+      font-size: 1.188rem;
+    }
+  }
 }
