@@ -4,7 +4,6 @@
   background: transparent linear-gradient(56deg, #21325d 0%, #214c93 100%) 0% 0%
     no-repeat padding-box;
   padding-top: 2.813rem;
-
   position: relative;
 
   .header1 {
@@ -62,9 +61,8 @@
     left: -145px;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: $mobile) {
     background: #1e2040;
-    padding: 0 $home-mobile-padding;
     padding-top: 3.125rem;
 
     .header1 {
@@ -75,6 +73,7 @@
       margin-bottom: 1.438rem;
     }
     .cards-row {
+      padding: 0 $home-mobile-padding;
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 3rem;

@@ -4,6 +4,7 @@
   flex-direction: column;
 
   label {
+    color: #101126;
     margin-bottom: 0.5rem;
     padding: 0.5rem;
     padding-left: 0;
@@ -30,6 +31,16 @@
       color: #737380;
       font-size: 0.9375rem;
       line-height: 1.125rem;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    label {
+      font-weight: 600;
+      color: #757474;
+    }
+    input {
+      border-color: #707070;
     }
   }
 }
