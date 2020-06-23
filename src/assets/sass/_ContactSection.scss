@@ -42,8 +42,13 @@
         font-size: 1.75rem;
         margin-bottom: 3.125rem;
       }
-      img {
-        margin-right: 2rem;
+      .social-icons {
+        display: flex;
+        justify-content: space-between;
+        max-width: 260px;
+        .social-icon {
+          fill: white;
+        }
       }
     }
 
@@ -115,6 +120,15 @@
           font-size: 1.75rem;
           color: #1e2040;
           margin: 0;
+        }
+        .social-icons {
+          max-width: 100%;
+          padding: 0 38px;
+          margin-top: 39px;
+          .social-icon {
+            fill: $primary-color;
+            opacity: 0.59;
+          }
         }
       }
 
