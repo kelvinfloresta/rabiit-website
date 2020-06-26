@@ -1,12 +1,13 @@
 .menu {
   display: none;
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
+    z-index: 99;
+    position: sticky;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     right: 1rem;
-
     .bar1,
     .bar2,
     .bar3 {
@@ -18,8 +19,6 @@
     }
 
     &.active {
-      position: fixed;
-      z-index: 1;
       .bar1 {
         transform: rotate(-45deg) translate(-5px, 5px);
       }

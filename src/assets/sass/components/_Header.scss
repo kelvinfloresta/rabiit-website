@@ -20,36 +20,32 @@
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
+    position: relative;
     padding-top: 1.25rem;
-  }
-}
-
-@media (max-width: 640px) {
-  .header .links {
-    padding-top: 30%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    height: 100%;
-    flex-direction: column;
-    background-color: #00de96;
-    align-items: center;
-    justify-content: unset;
-  }
-
-  header .links a {
-    margin-right: 0 !important;
-  }
-
-  header .links a.active {
-    color: #fff;
-  }
-
-  header .links.active {
-    width: 100%;
+    .links {
+      background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%)
+        0% 0% no-repeat padding-box;
+      position: fixed;
+      z-index: 99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+      box-sizing: border-box;
+      margin: 0;
+      padding-top: 5rem;
+      width: 100%;
+      right: -100vw;
+      top: 0;
+      transition: right 0.3s;
+      a {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+      &.active {
+        right: 0;
+      }
+    }
   }
 }
