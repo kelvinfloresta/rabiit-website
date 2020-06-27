@@ -9,6 +9,7 @@ window.addEventListener('load', () => {
     svgContainer.classList.add('active')
   }
 
+  loadSVG('processor')
   const width = window.innerWidth > 0 ? window.innerWidth : screen.width
   if (width <= 1024) return
 
@@ -16,5 +17,4 @@ window.addEventListener('load', () => {
   loadSVG('smartphone')
   loadSVG('smartphone-2')
   loadSVG('floating-windows')
-  loadSVG('processor')
 })
