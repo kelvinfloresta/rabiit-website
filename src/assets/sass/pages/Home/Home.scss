@@ -18,7 +18,7 @@ $home-mobile-padding: 1.625rem;
     background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
       0% no-repeat padding-box;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $phone) {
       padding: 0 $home-mobile-padding;
       background: transparent linear-gradient(218deg, #254c86 0%, #1e2040 100%)
         0% 0% no-repeat padding-box;
