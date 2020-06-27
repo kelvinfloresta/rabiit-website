@@ -98,7 +98,7 @@
     }
   }
 
-  @media (max-width: $phone) {
+  @media (max-width: $tablet) {
     img {
       display: none;
     }
@@ -122,8 +122,10 @@
           margin: 0;
         }
         .social-icons {
-          max-width: 100%;
+          max-width: 360px;
+          margin: 0 auto;
           padding: 0 38px;
+          text-align: center;
           margin-top: 39px;
           .social-icon {
             fill: $primary-color;
