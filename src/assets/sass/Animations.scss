@@ -1,3 +1,5 @@
+@import "variables";
+
 @keyframes slide-down {
   from {
     margin-top: 5rem;
@@ -55,9 +57,11 @@
 
 .bounce {
   cursor: pointer;
-  &:hover {
-    svg {
-      animation: bounce 0.8s linear alternate;
+  @media (min-width: $desktop) {
+    &:hover {
+      svg {
+        animation: bounce 0.8s linear alternate;
+      }
     }
   }
 }
