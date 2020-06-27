@@ -19,10 +19,14 @@
       color: white;
     }
   }
+  .social-media {
+    display: none;
+  }
 
   @media (max-width: $tablet) {
     position: relative;
     padding-top: 1.25rem;
+
     .links {
       background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%)
         0% 0% no-repeat padding-box;
@@ -30,21 +34,31 @@
       z-index: 99;
       display: flex;
       flex-direction: column;
-      align-items: center;
       height: 100vh;
-      box-sizing: border-box;
       margin: 0;
-      padding-top: 5rem;
+      box-sizing: border-box;
+      padding-left: 3.875rem;
+      padding-top: 5.5rem;
       width: 100%;
       right: -100vw;
       top: 0;
       transition: right 0.3s;
       a {
         margin: 0;
-        margin-bottom: 1rem;
+        margin-bottom: 2.5rem;
+        line-height: 2rem;
+        font-weight: 400;
       }
       &.active {
         right: 0;
+      }
+    }
+
+    .social-media {
+      display: block;
+      margin-top: 12.5rem;
+      a {
+        margin-right: 2rem;
       }
     }
   }
