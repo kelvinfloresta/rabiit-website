@@ -15,7 +15,8 @@
     cursor: pointer;
   }
 
-  input {
+  input,
+  textarea {
     line-height: 3.5rem;
     padding-left: 1.5rem;
     border: 1px solid #1e2040;
@@ -23,6 +24,8 @@
     transition: opacity 0.3s;
     box-sizing: border-box;
     opacity: 0.8;
+    font-size: 1.1rem;
+    color: #1d3451;
     &:focus {
       outline: none;
       opacity: 1;
@@ -34,12 +37,18 @@
     }
   }
 
+  textarea {
+    padding: 0.5rem 1rem;
+    line-height: 1.5rem;
+  }
+
   @media (max-width: $phone) {
     label {
       font-weight: 600;
       color: #757474;
     }
-    input {
+    input,
+    textarea {
       border-color: #707070;
     }
   }
