@@ -11,9 +11,8 @@ $home-mobile-padding: 1.625rem;
 @import "Home-products";
 
 .Home {
-  overflow: hidden;
-
   &-bg-color {
+    overflow: hidden;
     padding: 0 $home-padding;
     background: transparent linear-gradient(243deg, #254c86 0%, #1e2040 100%) 0%
       0% no-repeat padding-box;
