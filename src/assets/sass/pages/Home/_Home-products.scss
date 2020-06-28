@@ -49,6 +49,12 @@
     display: none;
   }
 
+  @media (min-width: $tablet) {
+    .cards-row-container .cards-row .card {
+      min-width: 450px;
+    }
+  }
+
   @media (min-width: $small-desktop) {
     background: transparent linear-gradient(56deg, #21325d 0%, #214c93 100%) 0%
       0% no-repeat padding-box;
