@@ -57,7 +57,7 @@
 
 .bounce {
   cursor: pointer;
-  @media (min-width: $desktop) {
+  @media (min-width: $small-desktop) {
     &:hover {
       svg {
         animation: bounce 0.8s linear alternate;
