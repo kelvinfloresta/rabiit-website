@@ -1,7 +1,6 @@
 .contact-section {
   display: flex;
-  padding-top: 6.25rem;
-  margin-top: 4rem;
+  margin-top: 10.25rem;
   justify-content: flex-end;
   position: relative;
   overflow: hidden;
@@ -31,7 +30,6 @@
       color: white;
       text-align: left;
       letter-spacing: 0px;
-      // margin-right: 18.75rem;
       z-index: 1;
       position: relative;
       margin-bottom: 192px;
@@ -94,6 +92,7 @@
     padding-left: 8.14%;
     padding-top: 10.94rem;
     padding-right: 14.55%;
+    padding-bottom: 2rem;
     .btn {
       margin-top: 1.5rem;
       width: fit-content;
