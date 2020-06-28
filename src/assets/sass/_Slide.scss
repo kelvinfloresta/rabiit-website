@@ -6,23 +6,33 @@
   margin: 0 auto;
   user-select: none;
 
-  > * {
+  .arrow-left,
+  .arrow-right {
     cursor: pointer;
-    opacity: 0.25;
-    transition: opacity 0.1s, transform 0.1s;
-    &:hover {
-      opacity: 1;
+    transition: opacity 0.1s;
+    &:active:not(.disabled) {
+      img {
+        transform: translateX(10px);
+      }
     }
-    &:active {
-      transform: translateX(10px);
+    &.disabled {
+      cursor: not-allowed;
+      opacity: 0.25;
+    }
+    img {
+      transition: transform 0.1s;
     }
   }
 
-  .left {
-    transform: rotate(180deg);
+  .arrow-left {
     margin-top: -1px;
-    &:active {
-      transform: rotate(180deg) translateX(10px);
+    &:active:not(.disabled) {
+      img {
+        transform: rotate(180deg) translateX(10px);
+      }
+    }
+    img {
+      transform: rotate(180deg);
     }
   }
 }
