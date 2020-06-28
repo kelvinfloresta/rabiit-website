@@ -1,18 +1,16 @@
 @import "../../Slide.scss";
 
 .Home-products {
-  background: transparent linear-gradient(56deg, #21325d 0%, #214c93 100%) 0% 0%
-    no-repeat padding-box;
-  padding-top: 2.813rem;
+  background: #1e2040;
+  padding-top: 3.125rem;
   position: relative;
 
   .header1 {
-    color: white;
     text-align: center;
-    text-transform: uppercase;
-    line-height: 5.375rem;
-    margin: 0;
-    margin-bottom: 6.25rem;
+    font-size: 1.875rem;
+    line-height: 2.813rem;
+    font-weight: 500;
+    margin-bottom: 1.438rem;
   }
 
   .card {
@@ -39,56 +37,59 @@
       justify-content: space-between;
       transition: transform 0.3s;
       .card {
-        min-width: 350px;
+        width: 90vw;
+        min-width: 400px;
         margin-right: 6.875rem;
       }
     }
   }
 
-  .top-right-points {
-    position: absolute;
-    height: 124px;
-    width: 371px;
-    top: 4px;
-    right: 167px;
-  }
-
-  .top-right-diamond-points {
-    position: absolute;
-    height: 194px;
-    width: 194px;
-    top: 56px;
-    right: -32px;
-  }
-
+  .top-right-points,
+  .top-right-diamond-points,
   .left-center-points {
-    position: absolute;
-    height: 335px;
-    width: 390px;
-    top: 192px;
-    left: -145px;
+    display: none;
   }
 
-  @media (max-width: $small-desktop) {
-    background: #1e2040;
-    padding-top: 3.125rem;
+  @media (min-width: $small-desktop) {
+    background: transparent linear-gradient(56deg, #21325d 0%, #214c93 100%) 0%
+      0% no-repeat padding-box;
+    padding-top: 2.813rem;
 
     .header1 {
+      color: white;
       text-align: center;
-      font-size: 1.875rem;
-      line-height: 2.813rem;
-      font-weight: 500;
-      margin-bottom: 1.438rem;
-    }
-    .cards-row-container .cards-row .card {
-      width: 90vw;
-      max-width: 350px;
+      text-transform: uppercase;
+      line-height: 5.375rem;
+      margin: 0;
+      margin-bottom: 6.25rem;
     }
 
-    .top-right-points,
-    .top-right-diamond-points,
+    .cards-row-container .cards-row .card {
+      min-width: 350px;
+    }
+
+    .top-right-points {
+      position: absolute;
+      height: 124px;
+      width: 371px;
+      top: 4px;
+      right: 167px;
+    }
+
+    .top-right-diamond-points {
+      position: absolute;
+      height: 194px;
+      width: 194px;
+      top: 56px;
+      right: -32px;
+    }
+
     .left-center-points {
-      display: none;
+      position: absolute;
+      height: 335px;
+      width: 390px;
+      top: 192px;
+      left: -145px;
     }
   }
 }
