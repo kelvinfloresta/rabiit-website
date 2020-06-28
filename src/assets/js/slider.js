@@ -15,15 +15,8 @@ window.addEventListener('load', function () {
   arrowLeft.classList.add('disabled')
 
   let index = 0
-  arrowLeft.addEventListener('click', function () {
-    slideToLeft()
-    translateCards()
-  })
-
-  arrowRight.addEventListener('click', function () {
-    slideToRight()
-    translateCards()
-  })
+  arrowLeft.addEventListener('click', slideToLeft)
+  arrowRight.addEventListener('click', slideToRight)
 
   function translateCards () {
     cardRows.style.transform = `translateX(-${index * fullCardWidth}px)`
@@ -33,6 +26,7 @@ window.addEventListener('load', function () {
     if (index === 0) return
     if (--index === 0) arrowLeft.classList.add('disabled')
     arrowRight.classList.remove('disabled')
+    translateCards()
   }
 
   function slideToRight () {
@@ -40,6 +34,7 @@ window.addEventListener('load', function () {
     if (index === limitOfDecrement) return
     if (++index === limitOfDecrement) arrowRight.classList.add('disabled')
     arrowLeft.classList.remove('disabled')
+    translateCards()
   }
 
   function getCardSizes () {
