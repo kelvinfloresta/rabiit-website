@@ -53,7 +53,7 @@ window.addEventListener('load', () => {
         errorContainer.classList.remove('active')
         return
       }
-      // window.Sentry.captureException(exception);
+      window.Sentry.captureException(exception)
       form.classList.add('hidden')
       errorContainer.classList.add('active')
     }
