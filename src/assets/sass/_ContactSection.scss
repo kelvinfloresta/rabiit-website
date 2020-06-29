@@ -93,17 +93,78 @@
     padding-top: 10.94rem;
     padding-right: 14.55%;
     padding-bottom: 2rem;
-    .btn {
+    position: relative;
+
+    .btn[type="submit"] {
       margin-top: 1.5rem;
       width: fit-content;
       align-self: flex-end;
     }
+
+    .input-group {
+      transition: opacity 0.3s;
+    }
+
+    &.loading {
+      .input-group,
+      .btn[type="submit"] {
+        opacity: 0.25;
+      }
+    }
+
+    &.hidden {
+      .input-group,
+      .btn[type="submit"] {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+
+    .error,
+    .success {
+      position: absolute;
+      top: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &.active {
+        opacity: 1;
+      }
+      .paragraph {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.75rem;
+        line-height: 2.625rem;
+        letter-spacing: 0px;
+      }
+    }
+
+    .error .buttons {
+      display: flex;
+      .light-button {
+        margin-right: 1rem;
+        max-width: 300px;
+        margin-top: 1rem;
+        color: $primary-color;
+        border-color: $primary-color;
+        background-color: transparent;
+      }
+
+      .btn-primary {
+        max-width: 300px;
+        margin-top: 1rem;
+      }
+    }
   }
 
   @media (max-width: $tablet) {
-    img {
-      display: none;
-    }
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -147,6 +208,18 @@
       order: 0;
       width: 100%;
       padding-top: 4.438rem;
+
+      .error .buttons {
+        flex-direction: column;
+        .light-button {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .left-bottom-points,
+    .center-points {
+      display: none;
     }
   }
 }

@@ -236,6 +236,21 @@
         </div>
       </div>
       <form class="contact-form">
+        <div class="success">
+          <img src="/assets/img/form/success.svg" />
+          <p class="paragraph">Sua mensagem foi</p>
+          <p class="paragraph">encaminhada com sucesso</p>
+        </div>
+
+        <div class="error">
+          <img src="/assets/img/form/error.svg" />
+          <p class="paragraph">Houve um erro</p>
+          <div class="buttons">
+            <button type="button" class="light-button">Voltar</button>
+            <button type="button" class="btn btn-primary">Tentar novamente</button>
+          </div>
+        </div>
+
         <div class="input-group">
           <label for="name">Nome</label>
           <input id="name" name="name" placeholder="Seu nome" />
@@ -259,7 +274,7 @@ O ramo de atividade é...
 Tenho disponibilidade no dia ... às ... horas"></textarea>
         </div>
 
-        <button class="btn btn-primary">Enviar mensagem</button>
+        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
 
       </form>
     </div>
@@ -269,8 +284,9 @@ Tenho disponibilidade no dia ... às ... horas"></textarea>
     <span class="logo">Rabi IT</span>
     <span>Todos os direitos reservados</span>
   </footer>
-  <script src="https://browser.sentry-cdn.com/5.18.1/bundle.min.js" integrity="sha384-4zdOhGLDdcXl+MRlpApt/Nvfe6A3AqGGBil9+lwFSkXNTv0rVx0eCyM1EaJCXS7r" crossorigin="anonymous">
-  </script>
+  <script src="https://browser.sentry-cdn.com/5.18.1/bundle.min.js"
+    integrity="sha384-4zdOhGLDdcXl+MRlpApt/Nvfe6A3AqGGBil9+lwFSkXNTv0rVx0eCyM1EaJCXS7r" crossorigin="anonymous">
+    </script>
   <script async src="/assets/js/logger.js"></script>
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script async src="/assets/js/index.js"></script>
