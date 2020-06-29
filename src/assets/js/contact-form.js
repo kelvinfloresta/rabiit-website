@@ -13,6 +13,7 @@ window.addEventListener('load', () => {
     bindErrorEvents(form)
     const successContainer = form.querySelector('.success')
     const submitBtn = form.querySelector('.btn')
+    configurePhoneInput()
 
     return async e => {
       e.preventDefault()
@@ -56,6 +57,22 @@ window.addEventListener('load', () => {
       window.Sentry.captureException(exception)
       form.classList.add('hidden')
       errorContainer.classList.add('active')
+    }
+
+    function inputHandler (masks, max, event) {
+      const c = event.target
+      const v = c.value.replace(/\D/g, '')
+      const m = c.value.length > max ? 1 : 0
+      window.VMasker(c).unMask()
+      window.VMasker(c).maskPattern(masks[m])
+      c.value = window.VMasker.toPattern(v, masks[m])
+    }
+
+    function configurePhoneInput () {
+      const telMask = ['(99) 9999-99999', '(99) 9 9999-9999']
+      const tel = form.querySelector('#phone')
+      window.VMasker(tel).maskPattern(telMask[0])
+      tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false)
     }
   }
 
