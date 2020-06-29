@@ -7,7 +7,9 @@
   overflow: hidden;
 
   .header1 {
+    color: white;
     text-align: center;
+    text-transform: uppercase;
     font-size: 1.875rem;
     line-height: 2.813rem;
     font-weight: 500;
@@ -15,15 +17,39 @@
   }
 
   .card {
+    padding: 0;
+    padding-top: 3.375rem;
+    height: 500px;
+    user-select: none;
+
+    &:hover {
+      .avatar-photo {
+        background-color: #464a91b8;
+        .card-icon {
+          fill: white;
+        }
+      }
+    }
+
+    .avatar-photo {
+      height: 79px;
+      width: 79px;
+      background-color: #464a9147;
+      .card-icon {
+        fill: #1e2040;
+      }
+    }
+
     &-title {
-      margin-bottom: 3rem;
+      margin-bottom: 3.375rem;
     }
 
     .paragraph {
       line-height: 1.5rem;
       letter-spacing: 0.38px;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      text-transform: uppercase;
+      margin-left: 3.5rem;
+      margin-bottom: 1.4rem;
     }
   }
 
@@ -40,7 +66,7 @@
       transition: transform 0.3s;
       .card {
         min-width: 90vw;
-        margin-right: 5.5rem;
+        margin-right: 3rem;
       }
     }
   }
@@ -63,16 +89,14 @@
     padding-top: 2.813rem;
 
     .header1 {
-      color: white;
-      text-align: center;
-      text-transform: uppercase;
-      line-height: 5.375rem;
       margin: 0;
+      line-height: 5.375rem;
       margin-bottom: 6.25rem;
     }
 
     .cards-row-container .cards-row .card {
       min-width: 350px;
+      border: 0;
     }
 
     .top-right-points {

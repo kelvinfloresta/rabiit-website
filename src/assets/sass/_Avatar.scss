@@ -4,7 +4,6 @@
   margin-bottom: 1.5rem;
 
   &-info {
-    max-width: 450px;
     margin-left: 2.75rem;
     .avatar-name {
       margin: 0;
@@ -61,4 +60,8 @@
   height: 63px;
   border-radius: 50%;
   background-color: #707070;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

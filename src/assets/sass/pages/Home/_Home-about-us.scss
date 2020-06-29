@@ -34,6 +34,9 @@
 
   &-items {
     margin-top: 6.25rem;
+    .avatar {
+      margin-bottom: 3rem;
+    }
   }
 
   @media (max-width: $tablet) {
@@ -64,10 +67,12 @@
       }
       .paragraph {
         color: #757474;
+        // text-align: justify;
         font-size: 1.5rem;
         line-height: 2rem;
         letter-spacing: 0.58px;
         margin: 0;
+        margin-bottom: 1rem;
         font-weight: 400;
         max-width: 100%;
       }
@@ -86,6 +91,22 @@
     &-items {
       margin-top: 7.5rem;
       margin-bottom: 1.313rem;
+    }
+  }
+
+  @media (max-width: $phone) {
+    &-items {
+      margin-top: 3rem;
+    }
+    .avatar {
+      display: flex;
+      flex-direction: column;
+      &-name {
+        font-size: 1.5rem;
+        margin: 0;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
