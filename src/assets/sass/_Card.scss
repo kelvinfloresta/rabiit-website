@@ -23,12 +23,19 @@
   }
 
   &:hover, &.active {
-    background-color: #1e2040;
     color: white;
     .card-title,
     .paragraph {
       color: white;
     }
+  }
+
+  &.active {
+    background-color: #1e2040;
+  }
+
+  &:hover:not(.active) {
+    background-color: rgba($color: #1e2040, $alpha: .7);
   }
 
   &:active {
