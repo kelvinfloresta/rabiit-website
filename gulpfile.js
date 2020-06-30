@@ -6,6 +6,8 @@ const rename = require('gulp-rename')
 const htmlmin = require('gulp-htmlmin')
 const clean = require('gulp-clean')
 const copy = require('gulp-copy')
+const babel = require('gulp-babel')
+const babelMinify = require('gulp-babel-minify')
 
 function cleanDistDir () {
   return src('dist', { read: false, allowEmpty: true }).pipe(clean())
@@ -34,15 +36,32 @@ function transpileSass () {
     .pipe(browserSync.stream())
 }
 
+function babelTask () {
+  return src('src/assets/js/**/*.js')
+    .pipe(babel({
+      presets: ['@babel/env']
+    }))
+    .pipe(babelMinify({
+      mangle: {
+        keepClassName: true
+      }
+    }))
+    .pipe(dest('dist/src/assets/js'))
+}
+
 function copyFiles () {
-  return src(['src/assets/**', '!src/assets/sass/**']).pipe(copy('dist'))
+  return src(['src/assets/**', '!src/assets/sass/**', '!src/assets/js/**']).pipe(copy('dist'))
 }
 
 function watchFiles (cb) {
   watch('src/*.html', minifyHtml).on('change', browserSync.reload)
   watch('src/assets/sass/**', transpileSass)
+  watch('src/assets/js/**', babelTask).on(
+    'change',
+    browserSync.reload
+  )
   watch('src/assets/sass/**/_*.scss', browserSync.reload)
-  watch(['src/assets/**', '!src/assets/sass/**'], copyFiles).on(
+  watch(['src/assets/**', '!src/assets/sass/**', '!src/assets/js/**'], copyFiles).on(
     'change',
     browserSync.reload
   )
@@ -56,6 +75,7 @@ exports.default = series(
   minifyHtml,
   transpileSass,
   copyFiles,
+  babelTask,
   watchFiles,
   browserSyncTask
 )
