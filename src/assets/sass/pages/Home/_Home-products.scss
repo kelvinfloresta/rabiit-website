@@ -23,24 +23,6 @@
     user-select: none;
     text-decoration: none;
 
-    &:hover, &.active {
-      .avatar-photo {
-        background-color: #464a91b8;
-        .card-icon {
-          fill: white;
-        }
-      }
-    }
-
-    .avatar-photo {
-      height: 79px;
-      width: 79px;
-      background-color: #464a9147;
-      .card-icon {
-        fill: #1e2040;
-      }
-    }
-
     &-title {
       margin-bottom: 3.375rem;
     }
