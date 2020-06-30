@@ -95,6 +95,11 @@
     padding-bottom: 2rem;
     position: relative;
 
+    &-mobile-title,
+    &-mobile-sub-title {
+      display: none;
+    }
+
     .btn[type="submit"] {
       margin-top: 1.5rem;
       width: fit-content;
@@ -164,6 +169,7 @@
         margin-top: 1rem;
       }
     }
+
     .checkbox-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -225,6 +231,24 @@
       .checkbox-grid {
         display: grid;
         grid-template-columns: 1fr;
+      }
+
+      &-mobile-sub-title {
+        display: block;
+        text-align: center;
+        margin: 0;
+        text-transform: uppercase;
+        color: $primary-color;
+        font-size: 1.2rem;
+      }
+      &-mobile-title {
+        display: block;
+        margin: 0 0 3rem 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $primary-color;
+        text-align: center;
+        font-size: 1.6rem;
       }
     }
 
