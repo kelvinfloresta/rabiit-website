@@ -68,7 +68,7 @@ function watchFiles (cb) {
   cb()
 }
 
-exports.build = series(cleanDistDir, minifyHtml, transpileSass, copyFiles)
+exports.build = series(cleanDistDir, minifyHtml, transpileSass, copyFiles, babelTask)
 
 exports.default = series(
   cleanDistDir,
