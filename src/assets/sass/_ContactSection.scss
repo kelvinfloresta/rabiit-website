@@ -112,7 +112,8 @@
 
     &.loading {
       .input-group,
-      .btn[type="submit"] {
+      .btn[type="submit"],
+      .checkbox-grid {
         opacity: 0.25;
       }
     }
