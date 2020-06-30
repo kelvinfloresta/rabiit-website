@@ -9,7 +9,7 @@ window.addEventListener('load', function () {
   const isMobile = width < 1280
   const maxAmountOfCards = isMobile ? 1 : 3
   const { fullCardWidth, margin } = getCardSizes()
-  const maxContainerWidth = fullCardWidth * maxAmountOfCards - margin
+  const maxContainerWidth = fullCardWidth * maxAmountOfCards - margin + 5
   container.style['max-width'] = maxContainerWidth + 'px'
 
   arrowLeft.classList.add('disabled')
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
   arrowRight.addEventListener('click', slideToRight)
 
   function translateCards () {
-    cardRows.style.transform = `translateX(-${index * fullCardWidth}px)`
+    cardRows.style.transform = `translateX(-${index * (fullCardWidth - 2)}px)`
   }
 
   function slideToLeft () {
