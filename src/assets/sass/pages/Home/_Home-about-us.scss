@@ -46,9 +46,9 @@
     margin-top: 6.25rem;
     .avatar {
       margin-bottom: 3rem;
-    }
-    .avatar-name {
-      text-align: center;
+      img {
+        width: 62px;
+      }
     }
   }
 
@@ -118,6 +118,7 @@
         margin: 0;
         margin-top: 1rem;
         margin-bottom: 0.5rem;
+        text-align: center;
       }
     }
   }
