@@ -15,15 +15,24 @@ window.addEventListener('load', () => {
     const submitBtn = form.querySelector('.btn')
     configurePhoneInput()
 
-    return async e => {
+    return e => {
       e.preventDefault()
       setLoading(true)
-      try {
-        await window.emailjs.sendForm(serviceId, templateName, form)
-        onSuccess()
-      } catch (e) {
-        onError(e)
+      const data = { notes: [] }
+      for (const el of form.elements) {
+        if (!el.name) continue
+        if (el.type === 'checkbox' && el.checked) {
+          data.notes.push(el.name)
+          continue
+        }
+        data[el.name] = el.value
       }
+      data.notes = data.notes.join(', ')
+
+      window.emailjs
+        .send(serviceId, templateName, data)
+        .then(onSuccess)
+        .catch(onError)
     }
 
     function onSuccess () {
@@ -72,7 +81,11 @@ window.addEventListener('load', () => {
       const telMask = ['(99) 9999-99999', '(99) 9 9999-9999']
       const tel = form.querySelector('#phone')
       window.VMasker(tel).maskPattern(telMask[0])
-      tel.addEventListener('input', inputHandler.bind(undefined, telMask, 14), false)
+      tel.addEventListener(
+        'input',
+        inputHandler.bind(undefined, telMask, 14),
+        false
+      )
     }
   }
 
