@@ -38,3 +38,10 @@ html {
 .no-overflow {
   overflow: hidden !important;
 }
+
+.lazysvg {
+  opacity: 0;
+  &.active {
+  opacity: 1;
+  }
+}
