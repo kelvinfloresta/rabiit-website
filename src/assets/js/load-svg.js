@@ -23,10 +23,10 @@ window.addEventListener('load', () => {
   ])
     .then(list => {
       const [notebook, smartphone, smartphone2, windows] = list
-      activeDelay(notebook, 500)
-      activeDelay(windows, 1000)
-      activeDelay(smartphone, 1000)
-      activeDelay(smartphone2, 1500)
+      activeDelay(notebook, 0)
+      activeDelay(windows, 300)
+      activeDelay(smartphone, 600)
+      activeDelay(smartphone2, 900)
     })
 
   function activeDelay (el, delay) {
