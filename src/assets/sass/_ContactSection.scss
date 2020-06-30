@@ -130,12 +130,14 @@
       right: 0;
       text-align: center;
       opacity: 0;
+      visibility: hidden;
       transition: opacity 0.3s;
       display: flex;
       flex-direction: column;
       align-items: center;
       &.active {
         opacity: 1;
+        visibility: visible;
       }
       .paragraph {
         text-align: center;
@@ -161,6 +163,10 @@
         max-width: 300px;
         margin-top: 1rem;
       }
+    }
+    .checkbox-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -214,6 +220,11 @@
         .light-button {
           margin-right: 0;
         }
+      }
+
+      .checkbox-grid {
+        display: grid;
+        grid-template-columns: 1fr;
       }
     }
 

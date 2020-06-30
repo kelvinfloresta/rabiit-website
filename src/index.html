@@ -101,7 +101,7 @@
     <h1 class="header1">Nossos serviços</h1>
     <div class="cards-row-container">
       <div class="cards-row">
-        <div class="card">
+        <div data-name="development" class="card">
           <div class="avatar-photo">
             <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="51.6" height="45.525"
               viewBox="0 0 51.6 45.525">
@@ -135,7 +135,7 @@
           <p class="paragraph">Aplicativos</p>
         </div>
 
-        <div class="card">
+        <div data-name="marketing" class="card">
           <div class="avatar-photo">
             <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" width="58.476" height="70.814"
               viewBox="0 20 58.476 58.814">
@@ -157,7 +157,7 @@
           <p class="paragraph">Blog</p>
         </div>
 
-        <div class="card">
+        <div data-name="design" class="card">
           <div class="avatar-photo">
             <svg xmlns="http://www.w3.org/2000/svg" width="54.621" height="54.814" viewBox="0 0 54.621 54.814">
               <g class="card-icon" transform="translate(-0.904)">
@@ -178,7 +178,7 @@
           <p class="paragraph">Branding</p>
         </div>
 
-        <div class="card">
+        <div data-name="training" class="card">
           <div class="avatar-photo">
             <svg xmlns="http://www.w3.org/2000/svg" width="57.3" height="57.3" viewBox="0 0 57.3 57.3">
               <g class="card-icon" transform="translate(-1 -1)">
@@ -278,7 +278,7 @@
           <p class="paragraph">Alameda Grajaú, 158 <br /> Barueri - SP</p>
         </div>
       </div>
-      <form class="contact-form">
+      <form class="contact-form form">
         <div class="success">
           <img src="/assets/img/form/success.svg" />
           <p class="paragraph">Sua mensagem foi</p>
@@ -309,6 +309,28 @@
           <input inputmode="tel" required id="phone" name="phone" placeholder="(11) 9 9800-0000" />
         </div>
 
+        <div class="checkbox-grid">
+          <div class="checkbox">
+            <input id="development" type="checkbox" name="services" value="desenvolvimento" />
+            <label for="development">Desenvolvimento</label>
+          </div>
+
+          <div class="checkbox">
+            <input id="marketing" type="checkbox" name="services" value="marketing-digital" />
+            <label for="marketing">Marketing Digital</label>
+          </div>
+
+          <div class="checkbox">
+            <input id="design" type="checkbox" name="services" value="design" />
+            <label for="design">Design</label>
+          </div>
+
+          <div class="checkbox">
+            <input id="training" type="checkbox" name="services" value="treinamento" />
+            <label for="training">Treinamento</label>
+          </div>
+        </div>
+
         <div class="input-group">
           <label for="message">Mensagem</label>
           <textarea id="message" name="message" rows="5" placeholder="Exemplo:
@@ -333,6 +355,7 @@ Tenho disponibilidade no dia ... às ... horas"></textarea>
   <script async src="/assets/js/logger.js"></script>
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
   <script async src="/assets/js/index.js"></script>
+  <script async src="/assets/js/pages/home.js"></script>
   <script async src="/assets/js/slider.js"></script>
   <script async src="/assets/js/load-svg.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>

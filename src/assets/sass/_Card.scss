@@ -22,7 +22,7 @@
     margin: 0 auto;
   }
 
-  &:hover {
+  &:hover, &.active {
     background-color: #1e2040;
     color: white;
     .card-title,

@@ -21,8 +21,9 @@
     padding-top: 3.375rem;
     height: 500px;
     user-select: none;
+    text-decoration: none;
 
-    &:hover {
+    &:hover, &.active {
       .avatar-photo {
         background-color: #464a91b8;
         .card-icon {
