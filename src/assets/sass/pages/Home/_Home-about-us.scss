@@ -22,6 +22,7 @@
     .paragraph {
       margin-left: 3.25rem;
       max-width: 450px;
+      margin-bottom: 1rem;
     }
     .processor {
       position: absolute;
@@ -30,12 +31,24 @@
       top: -110px;
       right: -190px;
     }
+
+    .quote {
+      font-size: 1rem;
+      max-width: 450px;
+      text-align: right;
+      color: rgba($color: #101126, $alpha: .75);
+      margin: 0;
+      font-weight: 400;
+    }
   }
 
   &-items {
     margin-top: 6.25rem;
     .avatar {
       margin-bottom: 3rem;
+    }
+    .avatar-name {
+      text-align: center;
     }
   }
 
@@ -67,7 +80,6 @@
       }
       .paragraph {
         color: #757474;
-        text-align: center;
         font-size: 1.5rem;
         line-height: 2rem;
         letter-spacing: 0.58px;
