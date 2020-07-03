@@ -1,0 +1,39 @@
+.Services-intro {
+  padding: 0 10%;
+  color: #101126;
+
+  .header1 {
+    font-size: 4rem;
+    line-height: 5.375rem;
+    font-weight: 400;
+    color: inherit;
+    margin-top: 6.813rem;
+    margin-bottom: 5.188rem;
+  }
+
+  .paragraph {
+    color: inherit;
+    font-size: 1.5rem;
+    max-width: 500px;
+  }
+
+  .btn-primary {
+    text-transform: uppercase;
+    margin-top: 7.25rem;
+    margin-bottom: 5.063rem;
+  }
+
+  .intro-icons-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 750px;
+    .paragraph {
+      max-width: 270px;
+      font-size: 1.313rem;
+      margin-top: 0.875rem;
+      color: inherit;
+      line-height: 2rem;
+    }
+  }
+}
