@@ -1,7 +1,4 @@
 window.addEventListener('load', () => {
-  window.emailjs.init('user_R0NEWeYzCUgpRUWj41SUv')
-  const serviceId = 'gmail'
-  const templateName = 'contact-form'
   const forms = document.querySelectorAll('.contact-form')
 
   forms.forEach(form => {
@@ -21,16 +18,18 @@ window.addEventListener('load', () => {
       const data = { notes: [] }
       for (const el of form.elements) {
         if (!el.name) continue
-        if (el.type === 'checkbox' && el.checked) {
-          data.notes.push(el.name)
+        if (el.type === 'checkbox') {
+          el.checked && data.notes.push(el.name)
           continue
         }
         data[el.name] = el.value
       }
+
       data.notes = data.notes.join(', ')
 
-      window.emailjs
-        .send(serviceId, templateName, data)
+      window.firebase.firestore()
+        .collection('contact')
+        .set(data)
         .then(onSuccess)
         .catch(onError)
     }
