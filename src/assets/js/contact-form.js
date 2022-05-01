@@ -25,11 +25,9 @@ window.addEventListener('load', () => {
         data[el.name] = el.value
       }
 
-      data.notes = data.notes.join(', ')
-
       window.firebase.firestore()
         .collection('contact')
-        .set(data)
+        .add(data)
         .then(onSuccess)
         .catch(onError)
     }
