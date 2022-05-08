@@ -25,6 +25,8 @@ window.addEventListener('load', () => {
         data[el.name] = el.value
       }
 
+      data.createdAt = window.firebase.firestore.Timestamp.now()
+
       window.firebase.firestore()
         .collection('contact')
         .add(data)
