@@ -7,6 +7,7 @@
   padding-bottom: 3rem;
   transition: 0.3s;
   box-sizing: border-box;
+  cursor: pointer;
 
   &-title {
     color: #1e2040;
@@ -27,36 +28,33 @@
     }
   }
 
-  @media (min-width: $small-desktop) {
-    cursor: pointer;
-    &:active {
-      transform: scale(0.98);
-    }
+  &:active {
+    transform: scale(0.98);
+  }
 
-    &.active {
-      background-color: #1e2040;
-    }
+  &.active {
+    background-color: #1e2040;
+  }
 
-    &:hover:not(.active) {
-      background-color: rgba($color: #1e2040, $alpha: 0.7);
-    }
+  &:hover:not(.active) {
+    background-color: rgba($color: #1e2040, $alpha: 0.7);
+  }
 
-    &:hover,
-    &.active {
+  &:hover,
+  &.active {
+    color: white;
+    .card-title,
+    .paragraph {
       color: white;
-      .card-title,
-      .paragraph {
-        color: white;
-      }
     }
+  }
 
-    &:hover,
-    &.active {
-      .avatar-photo {
-        background-color: #464a91b8;
-        .card-icon {
-          fill: white;
-        }
+  &:hover,
+  &.active {
+    .avatar-photo {
+      background-color: #464a91b8;
+      .card-icon {
+        fill: white;
       }
     }
   }
