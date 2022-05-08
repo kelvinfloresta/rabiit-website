@@ -39,6 +39,7 @@ window.addEventListener('load', () => {
       setError(null)
       successContainer.classList.add('active')
       form.classList.add('hidden')
+      window.gtag('event', 'conversion', { send_to: 'AW-619029436/tuQUCLONkbsDELzHlqcC' })
     }
 
     function onError (error) {
