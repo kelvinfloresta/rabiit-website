@@ -36,11 +36,6 @@
     background-color: #1e2040;
   }
 
-  &:hover:not(.active) {
-    background-color: rgba($color: #1e2040, $alpha: 0.7);
-  }
-
-  &:hover,
   &.active {
     color: white;
     .card-title,
@@ -49,7 +44,6 @@
     }
   }
 
-  &:hover,
   &.active {
     .avatar-photo {
       background-color: #464a91b8;
@@ -57,6 +51,29 @@
         fill: white;
       }
     }
+  }
+
+  @media (min-width: $small-desktop) {
+    &:hover:not(.active) {
+      background-color: rgba($color: #1e2040, $alpha: 0.7);
+    }
+
+    &:hover {
+      color: white;
+      .card-title,
+      .paragraph {
+        color: white;
+      }
+    }
+
+    &:hover {
+    .avatar-photo {
+      background-color: #464a91b8;
+      .card-icon {
+        fill: white;
+      }
+    }
+  }
   }
 
   @media (max-width: $tablet) {
