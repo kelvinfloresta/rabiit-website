@@ -15,11 +15,11 @@ window.addEventListener('load', () => {
     return e => {
       e.preventDefault()
       setLoading(true)
-      const data = { notes: [] }
+      const data = { services: [] }
       for (const el of form.elements) {
         if (!el.name) continue
         if (el.type === 'checkbox') {
-          el.checked && data.notes.push(el.name)
+          el.checked && data.services.push(el.name)
           continue
         }
         data[el.name] = el.value
